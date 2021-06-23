@@ -50,7 +50,7 @@ export default function NestedList() {
       </Collapse>
       </Box>
       <List component="nav" aria-labelledby="nested-list-subheader">
-        <Box bgcolor="#5522cc" flex justifyContent="space-between" width="100%">
+        <Box bgcolor="#0000FF" flex justifyContent="space-between" width="100%" borderRadius="10px">
           <ListItem button onClick={handleClick}>
             <ListItemIcon>
               <ChatIcon />

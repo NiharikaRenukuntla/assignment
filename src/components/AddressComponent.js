@@ -48,7 +48,7 @@ const AddressComponent = (props) => {
       </Grid>
       <Grid item xs={12}>
         {address.geo ? (
-          <div style={{ height: "40vh", width: "90%" }}>
+          <div style={{ height: "40vh", width: "75%" }}>
             <MapComponent addressData={address.geo} />
           </div>
         ) : (

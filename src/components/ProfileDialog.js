@@ -50,14 +50,12 @@ function SimpleDialog(props) {
         <div
           style={{
             width: "200px",
-            height: "150px",
+            height: "100px",
             backgroundColor: "#ffffff",
             borderRadius: "20px",
             position: "absolute",
             top: "30px",
-            right: "10px",
-            width: "20%",
-            height: "50%",
+            right: "8px",
           }}
           onClick={handleClose}
         >
