@@ -31,6 +31,7 @@ const UserProfileComponent = () => {
   });
   useEffect(() => {
     loadUserProfile(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
   const loadUserProfile = (id) => {
     let user = users.find((user) => {
