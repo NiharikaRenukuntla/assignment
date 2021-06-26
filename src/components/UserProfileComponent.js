@@ -38,6 +38,7 @@ const UserProfileComponent = () => {
   });
   useEffect(() => {
     loadUserProfile(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
   const loadUserProfile = (id) => {
     let user = users.find((user) => {
@@ -128,6 +129,7 @@ const UserProfileComponent = () => {
                           width="500px"
                           height="400px"
                           style={{ marginLeft: "30px" }}
+                          alt="locationImage"
                         />
                       </Grid>
                       <Grid item xs={5} align="right">

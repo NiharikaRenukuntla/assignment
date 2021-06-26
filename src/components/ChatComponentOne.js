@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   List,
@@ -48,7 +48,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ChatComponentOne(props) {
   const classes = useStyles();
-  const { user } = props;
   const [users] = useDetails();
   const [chat, setChat] = useState({});
   const [open, setOpen] = useState(false);

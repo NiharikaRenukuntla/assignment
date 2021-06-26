@@ -36,6 +36,7 @@ export default function ChatComponentTwo(props) {
                   src={chat.profilepicture}
                   width="30px"
                   height="30px"
+                  alt={chat.name}
                 />
               </ListItemIcon>
               <ListItemText primary={chat.name}/>
