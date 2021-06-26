@@ -9,11 +9,16 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact path="/userDashboard/:id">
-            <UserContext>
-              <UserProfileComponent />
-            </UserContext>
+        <Route exact path="/design/:id">
+          <UserContext>
+          <UserProfileComponent/>
+          </UserContext>
           </Route>
+          {/* <Route exact path="/userDashboard/:id">
+          //   <UserContext>
+          //   <UserProfileComponent/>
+          //   </UserContext>
+  // </Route>*/}
           <Route path="/">
             <UserContext>
               <LoginPage />

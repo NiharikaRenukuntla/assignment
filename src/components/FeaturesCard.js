@@ -1,4 +1,4 @@
-import { Box } from "@material-ui/core";
+import { Box, Typography } from "@material-ui/core";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
@@ -9,7 +9,7 @@ const FeaturesCard = (props) => {
     <div
       style={{
         backgroundColor: "#5522cc",
-        height: "80vh",
+        height: "88vh",
         borderRadius: "20px",
         display: "flex",
         justifyContent: "center",
@@ -17,35 +17,44 @@ const FeaturesCard = (props) => {
         flexDirection: "column",
       }}
     >
-      <Box p={2} width="80%">
+      <Box p={2} width="70%" m={1}>
         <NavLink
           style={{ textDecoration: "none", color: "#dddddd" }}
-          to={`/userDashboard/${id}`}
+          to={`/design/${id}`}
         >
-          Profile
+          <Typography variant="subtitle1" align="left">
+            Profile
+          </Typography>
         </NavLink>
-        <hr style={{ width: "60%" }} />
+        <hr style={{ width: "100%", color: "#cccccc" }} />
         <NavLink
           style={{ textDecoration: "none", color: "#dddddd" }}
           to="/posts"
         >
-          Posts
+          <Typography variant="subtitle1" align="left">
+            Posts
+          </Typography>
         </NavLink>
-        <hr style={{ width: "60%" }} />
+        <hr style={{ width: "100%", color: "#cccccc" }} />
+
         <NavLink
           style={{ textDecoration: "none", color: "#dddddd" }}
           to="/gallery"
         >
-          Gallery
+          <Typography variant="subtitle1" align="left">
+            Gallery
+          </Typography>
         </NavLink>
-        <hr style={{ width: "60%" }} />
+        <hr style={{ width: "100%", color: "#cccccc" }} />
         <NavLink
           style={{ textDecoration: "none", color: "#dddddd" }}
           to="/todo"
         >
-          Todo
+          <Typography variant="subtitle1" align="left">
+            Todo
+          </Typography>
         </NavLink>
-        <hr style={{ width: "60%" }} />
+        <hr style={{ width: "100%", color: "#cccccc" }} />
       </Box>
     </div>
   );
@@ -54,9 +63,9 @@ const FeaturesCard = (props) => {
 export default FeaturesCard;
 
 FeaturesCard.propTypes = {
-  id: PropTypes.string
+  id: PropTypes.string,
 };
 
 FeaturesCard.defaultProps = {
-  id: ""
+  id: "",
 };

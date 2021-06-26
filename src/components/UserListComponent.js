@@ -30,7 +30,7 @@ const UserListComponent = (props) => {
   const { users } = props;
   const history = useHistory();
   const viewProfile = (user) => {
-    history.push(`/userDashboard/${user}`);
+    history.push(`/design/${user}`);
   };
   return (
     <List>
